@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>:-)FUTBOL:-)</title>
+      <link rel="stylesheet" href="css/estilos.css"/>
+  </head>
+  <body>
+      <div id="contenedor">
+           <header> 
+                <h1>Liga de fútbol profesional</h1>
+           </header>
+           <nav>
+              <div id="menu">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="fixture.html">Fixture y Resultados</a></li>
+                     <li><a href="equipos.html">Equipos</a></li>
+                     <li><p align="right" th:text="'Bienvenido! ' + ${usuario}"></p></li>
+                  </ul>
+              </div>
+           </nav>
+            
+           <section id="noticias">
+             <h2>Noticias</h2>
+             <div class="container">
+                 <div class="card">
+                     <img src="img/mundoDeportivo1.jpg" width="200" height="210">
+                     <h4>Futbol de Sevilla</h4>
+                     <p>Escudero:"El estado mental va a marcar la diferencia"</p>
+                 </div>
+                 <div class="card">
+                     <img src="img/mundoDeportivo2.jpg" width="200" height="210">
+                     <h4>Villareal</h4>
+                     <p>Roig, el presidente más veterano de Primera, cumple 23 años en el Villarreal</p>
+                 </div>
+                 <div class="card">
+                     <img src="img/mundoDeportivo3.jpg" width="200" height="210">
+                     <h4>Levante</h4>
+                     <p>El levante logra casi el triple de puntos en casa</p>
+                 </div>
+           </div>      
+           </section>
+           <aside>
+              <h2>Auspiciantes</h2>
+           </aside>
+           
+      </div>
+      <footer>
+        <h2>Avda.Pedro Ortiz de Zarate N°455 - Tel 388 4789555</h2>
+      </footer>
+  </body>
+</html>
